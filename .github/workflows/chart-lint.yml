@@ -6,7 +6,9 @@ on:
       - develop
       - 'release/**'
   pull_request:
-    types: [ 'opened', 'edited', 'reopened', 'synchronize' ]
+    branches:
+      - develop
+      - 'release/**'
 
 jobs:
   lint-test:
